@@ -8,6 +8,7 @@
   "private": false,
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "ipfs-core": "^0.14.0"
   }
 }
