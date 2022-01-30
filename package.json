@@ -6,6 +6,9 @@
   "author": "Prixix",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "start": "nodemon server.js"
   },
