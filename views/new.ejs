@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/dist/autosize.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>DasteBin</title>
+  </head>
+  <body>
+    <form action="/save" method="post">
+      <%- include("_buttons.ejs", { canSave: true }) %>
+      <div class="wrapper">
+        <div class="line-numbers">&gt;</div>
+        <textarea autofocus name="code"><%= locals.code %></textarea>
+      </div>
+    </form>
+    <script>
+      autosize(document.querySelector("textarea"));
+    </script>
+  </body>
+</html>

@@ -2,13 +2,20 @@
   "name": "dastebin",
   "version": "1.0.0",
   "description": "Decentralized PasteBin alternative",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Prixix",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "ipfs-core": "^0.14.0"
+    "ipfs-core": "^0.14.0",
+    "ipfs-http-client": "^56.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

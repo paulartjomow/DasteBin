@@ -1,0 +1,50 @@
+<div class="buttons-wrapper">
+  <a href="/about.md" class="logo">DasteBin</a>
+  <div class="buttons">
+    <a href="/new" class="btn" id="new" title="ctrl + n">New</a>
+    <% if(locals.canSave) { %>
+    <button class="btn" type="submit" id="save" title="ctrl + s">Save</button>
+    <% } %> <% if(locals.canDuplicate) { %>
+    <a href="/duplicate/<%= locals.cid %>" class="btn" id="duplicate" title="ctrl + d">Duplicate</button>
+    <% } %> <% if(locals.canShowRaw) { %>
+    <a href="/raw/<%= locals.cid %>" class="btn" id="raw" title="ctrl + r">Raw</a>
+    <% } %>
+  </div>
+  <script>
+    document.addEventListener('keydown', e => {
+      if(e.ctrlKey) {
+        if (e.key === 's') {
+          e.preventDefault();
+
+          if(document.querySelector('#save')) {
+            document.querySelector('#save').click();
+          }
+        }
+
+        if(e.key === 'd') {
+          e.preventDefault();
+
+          if(document.querySelector('#duplicate')) {
+            document.querySelector('#duplicate').click();
+          }
+        }
+
+        if(e.key === 'r') {
+          e.preventDefault();
+
+          if (document.querySelector('#raw')) {
+            document.querySelector('#raw').click();
+          }
+        }
+
+        if(e.key === 'n') {
+          e.preventDefault();
+
+          if(document.querySelector('#new')) {
+            document.querySelector('#new').click();
+          }
+        }
+      }
+  });
+  </script>
+</div>
