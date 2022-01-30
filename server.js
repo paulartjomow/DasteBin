@@ -1,7 +1,6 @@
 const express = require("express");
 
 const IPFS = require("ipfs-core");
-const ipfsClient = require("ipfs-http-client");
 
 async function main() {
   const ipfs = await IPFS.create();
