@@ -2,6 +2,8 @@ const express = require("express");
 
 const IPFS = require("ipfs-core");
 
+const CID = require("cids");
+
 async function main() {
   const ipfs = await IPFS.create();
 
@@ -83,12 +85,13 @@ This is free and open source software.
   });
 
   const getCode = async (cid) => {
+    cid = new CID(cid);
     const data = await ipfs.cat(cid);
 
     let code = "";
 
     for await (const chunk of data) {
-      code += chunk.toString();
+      code += chunk.toString("utf8");
     }
 
     return code;
