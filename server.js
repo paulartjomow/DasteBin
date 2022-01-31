@@ -74,16 +74,21 @@ async function main() {
   });
 
   const getCode = async (cid) => {
-    cid = new CID(cid);
-    const data = await ipfs.cat(cid);
+    try {
+      cid = new CID(cid);
 
-    let code = "";
+      let data = await ipfs.cat(cid, { timeout: 10000 });
 
-    for await (const chunk of data) {
-      code += chunk.toString("utf8");
+      let code = "";
+
+      for await (const chunk of data) {
+        code += chunk.toString("utf8");
+      }
+
+      return code;
+    } catch (err) {
+      return fs.readFileSync("invalid.md", "utf8");
     }
-
-    return code;
   };
 }
 
