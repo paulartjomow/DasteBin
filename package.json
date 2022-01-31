@@ -1,6 +1,6 @@
 {
   "name": "dastebin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Decentralized way to store code snippets",
   "main": "server.js",
   "author": "Prixix",
