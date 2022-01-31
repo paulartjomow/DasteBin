@@ -1,8 +1,7 @@
 const express = require("express");
-
 const IPFS = require("ipfs-core");
-
 const CID = require("cids");
+const fs = require("fs");
 
 async function main() {
   const ipfs = await IPFS.create();
@@ -37,32 +36,7 @@ async function main() {
   });
 
   app.get("/about.md", async (req, res) => {
-    let code = `# About
-DasteBin is a paste server that allows you to save code snippets to IPFS. IPFS is a peer-to-peer distributed content storage system, so it is a decentralized way to store data.
-This service is automatically starting up an IPFS node.
-
-The GitHub repository for this project is https://github.com/Prixix/DasteBin.
-    
-## Features
-- Save code
-- Share code
-- View code
-- View code in raw format
-    
-## How to use
-- Go to /new
-- Write code
-- Click save
-
-## License
-This is free and open source software.
-
-## Credits
-- [IPFS](https://ipfs.io/)
-- [EJS](https://ejs.co/)
-- [Express](https://expressjs.com/)
-- [IPFS-Core](https://github.com/ipfs/js-ipfs)
-- [IPFS-HTTP-Client](https://github.com/ipfs/js-ipfs)`;
+    const code = fs.readFileSync("about.md", "utf8");
 
     res.render("code-display", { code, language: "markdown" });
   });
