@@ -23,6 +23,13 @@ async function main() {
 
   app.post("/new", async (req, res) => {
     const code = req.body.code;
+
+    //Check if code is valid
+    if (code.length < 1) {
+      res.json({ error: "Code is empty" });
+      return;
+    }
+
     const hash = await ipfs.add(code);
 
     res.json({ hash: hash.path });
