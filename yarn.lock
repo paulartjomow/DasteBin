@@ -1536,10 +1536,10 @@ ipfs-bitswap@^10.0.1:
     varint "^6.0.0"
     varint-decoder "^1.0.0"
 
-ipfs-core-config@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ipfs-core-config/-/ipfs-core-config-0.3.0.tgz#54621a67ada50505d20e150224a5e8b145580e3e"
-  integrity sha512-8z44ENi3msXKKvyObnTzbWL81Y006ZKA/XjvWvAU7Ktl0RFSmkFR9LhgyNcSsSWDuxbV4eVxQZqORu3TIM/Trw==
+ipfs-core-config@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/ipfs-core-config/-/ipfs-core-config-0.3.1.tgz#b3f4efdbe1bfc5eb867ad7324686aa3ba828f484"
+  integrity sha512-9qAPMlYrxQ6/n59E+v6boiRdqK5FSCKcYHs3YyrCIQYqA0Mq1xqmgzquYSkn0N/xhay59YdzWfiVOu+rb728SA==
   dependencies:
     "@chainsafe/libp2p-noise" "^5.0.1"
     blockstore-datastore-adapter "^2.0.2"
@@ -1568,26 +1568,26 @@ ipfs-core-config@^0.3.0:
     p-queue "^6.6.1"
     uint8arrays "^3.0.0"
 
-ipfs-core-types@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/ipfs-core-types/-/ipfs-core-types-0.10.0.tgz#6a81d4c9c8f0d114b0206b128887dd0d9927c86c"
-  integrity sha512-mgPDqaHNu4ybGTa8Irj68+ZxE9pI8zWHRyI8T3EvBImPfD1fHIizGpIqKcdRXvgJfYifWKC9tqnoQBKTsBc/0Q==
+ipfs-core-types@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/ipfs-core-types/-/ipfs-core-types-0.10.1.tgz#53c60f589e4e54c2d566f0c856c2fcf0ea4a5577"
+  integrity sha512-s5+kXXcjkIdWPHblrE0TyiKxROQdL7zfkVI7FpEEwv5rtHCjpI0I4vKSzziZLLzLXf3a2F1qtscOnlaT0ruWBw==
   dependencies:
     interface-datastore "^6.0.2"
     multiaddr "^10.0.0"
-    multiformats "^9.4.13"
+    multiformats "^9.5.1"
 
-ipfs-core-utils@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/ipfs-core-utils/-/ipfs-core-utils-0.14.0.tgz#cdb1f2fbe796abf4269306ce7bb86f8f1ad1b8a4"
-  integrity sha512-jf3OSgO5+H3rTBYiFcxACEP1p5fby4NwSIlpt2++FwOY78BRD98YYBdMMluh/frt4dDN93xSJgB7ALSvjJRGOg==
+ipfs-core-utils@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/ipfs-core-utils/-/ipfs-core-utils-0.14.1.tgz#b2d66f929ca853fc0525dec4043546ebaaa3a627"
+  integrity sha512-Zm5Ou6zd5W5COaVpE2v7a7QS0KhlYJ4CakxVgoIJWWXSdexLt0M3Z3dTWMlFygWu6QRaKyOURZPdOlPWfqBThQ==
   dependencies:
     any-signal "^3.0.0"
     blob-to-it "^1.0.1"
     browser-readablestream-to-it "^1.0.1"
     debug "^4.1.1"
     err-code "^3.0.1"
-    ipfs-core-types "^0.10.0"
+    ipfs-core-types "^0.10.1"
     ipfs-unixfs "^6.0.3"
     ipfs-utils "^9.0.2"
     it-all "^1.0.4"
@@ -1597,16 +1597,16 @@ ipfs-core-utils@^0.14.0:
     merge-options "^3.0.4"
     multiaddr "^10.0.0"
     multiaddr-to-uri "^8.0.0"
-    multiformats "^9.4.13"
+    multiformats "^9.5.1"
     nanoid "^3.1.23"
     parse-duration "^1.0.0"
     timeout-abort-controller "^3.0.0"
     uint8arrays "^3.0.0"
 
-ipfs-core@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/ipfs-core/-/ipfs-core-0.14.0.tgz#d4fbfa98fca7cce10553e4586be4320f8aefb7ea"
-  integrity sha512-tHYSWp6ieTOms+/ZDrC5Pn8iNfkxHnLWtpCa2NZWTjOZUx9tAW5cTcpxRFNNiId2+H5/Gb+K9UMAgpoGH1c1Hg==
+ipfs-core@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/ipfs-core/-/ipfs-core-0.14.1.tgz#62245970d231aef0148928da540b3b83801dfdf8"
+  integrity sha512-hmIgbRlJoj3frU0R+Ac3ftVAu+Y4ZbnmCOPXXpEIinNMxUTt8/iy4He+69nM0uHz/TZlHMDJEGsnWaR42vcL9g==
   dependencies:
     "@chainsafe/libp2p-noise" "^5.0.0"
     "@ipld/car" "^3.1.0"
@@ -1629,10 +1629,10 @@ ipfs-core@^0.14.0:
     interface-blockstore "^2.0.2"
     interface-datastore "^6.0.2"
     ipfs-bitswap "^10.0.1"
-    ipfs-core-config "^0.3.0"
-    ipfs-core-types "^0.10.0"
-    ipfs-core-utils "^0.14.0"
-    ipfs-http-client "^56.0.0"
+    ipfs-core-config "^0.3.1"
+    ipfs-core-types "^0.10.1"
+    ipfs-core-utils "^0.14.1"
+    ipfs-http-client "^56.0.1"
     ipfs-repo "^14.0.1"
     ipfs-unixfs "^6.0.3"
     ipfs-unixfs-exporter "^7.0.3"
@@ -1666,17 +1666,17 @@ ipfs-core@^0.14.0:
     mortice "^2.0.0"
     multiaddr "^10.0.0"
     multiaddr-to-uri "^8.0.0"
-    multiformats "^9.4.13"
+    multiformats "^9.5.1"
     pako "^1.0.2"
     parse-duration "^1.0.0"
     peer-id "^0.16.0"
     timeout-abort-controller "^3.0.0"
     uint8arrays "^3.0.0"
 
-ipfs-http-client@^56.0.0:
-  version "56.0.0"
-  resolved "https://registry.yarnpkg.com/ipfs-http-client/-/ipfs-http-client-56.0.0.tgz#f42fa2bbf987bfa128ce0025de5d668586f4a815"
-  integrity sha512-JF3on9c0hB9XHk/UCxbyC6rSpERuj8F/0QcN/HImZoHNUKZ0/T8DpgVopocKdmGi1gr3Izlop7poaXomSt8Nug==
+ipfs-http-client@^56.0.0, ipfs-http-client@^56.0.1:
+  version "56.0.1"
+  resolved "https://registry.yarnpkg.com/ipfs-http-client/-/ipfs-http-client-56.0.1.tgz#aaa40a1bf3e3d07f5a49fadefd8b6017b91e3fb9"
+  integrity sha512-U0sUyGZndcIluMJL3gDdCSgF7RwShDklJJxfDf9IRcbO72hqSJsib4amYzqcqfetft6vYa8uRIoJFEIWndHwrg==
   dependencies:
     "@ipld/dag-cbor" "^7.0.0"
     "@ipld/dag-json" "^8.0.1"
@@ -1685,14 +1685,14 @@ ipfs-http-client@^56.0.0:
     dag-jose "^1.0.0"
     debug "^4.1.1"
     err-code "^3.0.1"
-    ipfs-core-types "^0.10.0"
-    ipfs-core-utils "^0.14.0"
+    ipfs-core-types "^0.10.1"
+    ipfs-core-utils "^0.14.1"
     ipfs-utils "^9.0.2"
     it-first "^1.0.6"
     it-last "^1.0.4"
     merge-options "^3.0.4"
     multiaddr "^10.0.0"
-    multiformats "^9.4.13"
+    multiformats "^9.5.1"
     parse-duration "^1.0.0"
     stream-to-it "^0.2.2"
     uint8arrays "^3.0.0"
@@ -2824,10 +2824,10 @@ multicodec@^3.0.1:
     uint8arrays "^3.0.0"
     varint "^6.0.0"
 
-multiformats@^9.0.0, multiformats@^9.0.2, multiformats@^9.0.4, multiformats@^9.1.0, multiformats@^9.1.2, multiformats@^9.4.13, multiformats@^9.4.2, multiformats@^9.4.5, multiformats@^9.4.7, multiformats@^9.5.4:
-  version "9.6.2"
-  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.6.2.tgz#3dd8f696171a367fa826b7c432851da850eb115e"
-  integrity sha512-1dKng7RkBelbEZQQD2zvdzYKgUmtggpWl+GXQBYhnEGGkV6VIYfWgV3VSeyhcUFFEelI5q4D0etCJZ7fbuiamQ==
+multiformats@^9.0.0, multiformats@^9.0.2, multiformats@^9.0.4, multiformats@^9.1.0, multiformats@^9.1.2, multiformats@^9.4.2, multiformats@^9.4.5, multiformats@^9.4.7, multiformats@^9.5.1, multiformats@^9.5.4:
+  version "9.6.3"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.6.3.tgz#9f2aef711ddd0e7b05a1b5f1ad70928544c8c190"
+  integrity sha512-yfXKI66fL0nFzt0nJl26i4wV1qAqbAEIBvfFbkbsne9GrLz6IHvHUoRyxUtlJcdP181ssOgjama6E/VSk4pbrA==
 
 multihashes@^4.0.1:
   version "4.0.3"
