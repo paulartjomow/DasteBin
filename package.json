@@ -29,6 +29,6 @@
     "ipfs-http-client": "^60.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^3.1.3"
   }
 }
