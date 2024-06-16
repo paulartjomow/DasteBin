@@ -25,7 +25,7 @@
     "cids": "^1.1.9",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "ipfs-core": "^0.14.1",
+    "ipfs-core": "^0.18.1",
     "ipfs-http-client": "^60.0.1"
   },
   "devDependencies": {
