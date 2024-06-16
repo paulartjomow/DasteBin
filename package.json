@@ -6,6 +6,7 @@
   "author": "Prixix",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Prixix/DasteBin.git"
@@ -22,11 +23,11 @@
     "startdev": "nodemon server.js"
   },
   "dependencies": {
+    "@helia/unixfs": "^3.0.6",
     "cids": "^1.1.9",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "ipfs-core": "^0.18.1",
-    "ipfs-http-client": "^60.0.1"
+    "helia": "^4.2.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.3"
