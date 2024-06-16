@@ -1,4 +1,5 @@
 import express from 'express'
+import { rateLimit } from 'express-rate-limit'
 import { createHelia } from 'helia'
 import { unixfs } from '@helia/unixfs'
 import { CID } from 'multiformats/cid'
@@ -12,10 +13,18 @@ async function main() {
 
   const app = express()
 
+  var limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    limit: 100,
+    standardHeaders: 'draft-7',
+    legacyHeaders: false
+  })
+
   app.set("view engine", "ejs")
   app.use(express.static("public"))
   app.use(express.urlencoded({ extended: true }))
   app.use(express.json())
+  app.use(limiter)
 
   app.get("/", (req, res) => {
     res.redirect("/new")
