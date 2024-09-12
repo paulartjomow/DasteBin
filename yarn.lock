@@ -157,10 +157,10 @@
     p-queue "^8.0.1"
     uint8arrays "^5.0.1"
 
-"@helia/interface@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@helia/interface/-/interface-4.3.0.tgz#d7d8fb83a346e036f09c4810af6200e7fb0a547a"
-  integrity sha512-gaWQSVGIcOkK0Wx12qUiUMFLPI8AjQCYaf4dpZdciSYPNfKOtPpW54QGzgrQYBcvBgPzg16hnnvDGwLeL2WlAQ==
+"@helia/interface@^4.3.0", "@helia/interface@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@helia/interface/-/interface-4.3.1.tgz#064ad5a82a3d109c94e16a7a62ccb7faa07ca05b"
+  integrity sha512-jvuUUAQbLMhvMt+Lon7mJfJt5xJWiwn8aXtI9fHBpMNMsrKJOtefxAzwSr18xe+C9bMdOyRtocj2eFhs74bQ8w==
   dependencies:
     "@libp2p/interface" "^1.1.4"
     "@multiformats/dns" "^1.0.1"
@@ -185,12 +185,12 @@
     multiformats "^13.1.0"
     uint8arrays "^5.0.2"
 
-"@helia/unixfs@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@helia/unixfs/-/unixfs-3.0.6.tgz#9cc5af6e7e0fc436a7b5d7e5a3d57eff882a13e7"
-  integrity sha512-x3hoHUjwNk2M9Hg0Z9sQE8O8S2rcj13O9dYexGHckxdpeEPhNOwRWT1cMpY8NTK0vpuIs0TvlQm9gYfHm94Clw==
+"@helia/unixfs@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@helia/unixfs/-/unixfs-3.0.7.tgz#11383428499675343c44720301d2841a8668a2e3"
+  integrity sha512-5fBXYk9t6Iu/DnTQZ//sn0MhM00AnK+VYEkfXdReoBUdzVFrOFW/bihT4sgLfYCq86+TShdrU1aDLkbFiN6FnQ==
   dependencies:
-    "@helia/interface" "^4.3.0"
+    "@helia/interface" "^4.3.1"
     "@ipld/dag-pb" "^4.1.0"
     "@libp2p/interface" "^1.1.4"
     "@libp2p/logger" "^4.0.7"
