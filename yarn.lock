@@ -89,13 +89,13 @@
   dependencies:
     "@chainsafe/is-ip" "^2.0.1"
 
-"@helia/bitswap@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@helia/bitswap/-/bitswap-1.1.2.tgz#25de352dc4972f46dec4d08f63993c5293cbcd78"
-  integrity sha512-Nf2Ql0ph/3++12mYohn/6NX1DvKHVxCdIVYDJzWYDHlVtI31FvHYAaFlBeX0d27iFjVO9SiPirf4qyuzULhQ0Q==
+"@helia/bitswap@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@helia/bitswap/-/bitswap-1.1.3.tgz#36ae3fff25551e9831a209205ca9ee304837b906"
+  integrity sha512-nCszNky/kOxaj1CZrZbzzFz6Fn7uNWigudn4KaLV+ZuFx6xyB8+t6aCmjKQ59me0WA3mwkmHkPtUOi9Y75zLSw==
   dependencies:
-    "@helia/interface" "^4.3.0"
-    "@helia/utils" "^0.3.2"
+    "@helia/interface" "^4.3.1"
+    "@helia/utils" "^0.3.3"
     "@libp2p/interface" "^1.1.2"
     "@libp2p/logger" "^4.0.5"
     "@libp2p/peer-collections" "^5.1.6"
@@ -119,14 +119,14 @@
     uint8arraylist "^2.4.3"
     uint8arrays "^5.0.1"
 
-"@helia/block-brokers@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@helia/block-brokers/-/block-brokers-3.0.2.tgz#59d954488736cd49a5fedc32b2dfc998ed6c2a07"
-  integrity sha512-u6B/5YePYKmTQCRW4hhsfhq3oopXNsdN+rNwYDxJcPt6nCaep9PnFk/MxMP25UvID9Wol4EQ8RxYxFhjuD8pGQ==
+"@helia/block-brokers@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@helia/block-brokers/-/block-brokers-3.0.3.tgz#4a83cf17ef2e06846b84a88a558f9211fff4a0b9"
+  integrity sha512-xSnmWv1jgeBJURcdF/KFOHEa1CQygk3jm1qxYPYqnMWxRXhsFG5Qi13EA+QfslCXyywfxbr4yJWleUUV2Mw4oQ==
   dependencies:
-    "@helia/bitswap" "^1.1.2"
-    "@helia/interface" "^4.3.0"
-    "@helia/utils" "^0.3.2"
+    "@helia/bitswap" "^1.1.3"
+    "@helia/interface" "^4.3.1"
+    "@helia/utils" "^0.3.3"
     "@libp2p/interface" "^1.1.4"
     "@libp2p/utils" "^5.2.6"
     "@multiformats/multiaddr" "^12.2.1"
@@ -157,10 +157,10 @@
     p-queue "^8.0.1"
     uint8arrays "^5.0.1"
 
-"@helia/interface@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@helia/interface/-/interface-4.3.0.tgz#d7d8fb83a346e036f09c4810af6200e7fb0a547a"
-  integrity sha512-gaWQSVGIcOkK0Wx12qUiUMFLPI8AjQCYaf4dpZdciSYPNfKOtPpW54QGzgrQYBcvBgPzg16hnnvDGwLeL2WlAQ==
+"@helia/interface@^4.3.0", "@helia/interface@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@helia/interface/-/interface-4.3.1.tgz#064ad5a82a3d109c94e16a7a62ccb7faa07ca05b"
+  integrity sha512-jvuUUAQbLMhvMt+Lon7mJfJt5xJWiwn8aXtI9fHBpMNMsrKJOtefxAzwSr18xe+C9bMdOyRtocj2eFhs74bQ8w==
   dependencies:
     "@libp2p/interface" "^1.1.4"
     "@multiformats/dns" "^1.0.1"
@@ -170,13 +170,13 @@
     multiformats "^13.1.0"
     progress-events "^1.0.0"
 
-"@helia/routers@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@helia/routers/-/routers-1.1.0.tgz#e3e5a7b1b4007d42c1751558f4ad4e1a4ba6a299"
-  integrity sha512-WwHcvN8No6+3alTrxNXtTJdqfyX0Ymm41u5yL+1YFdsvRKKy5RLxNlgla34kFJaHuQGPFdROYP/9X4UaHpvcIQ==
+"@helia/routers@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@helia/routers/-/routers-1.1.1.tgz#fa60ea61ebb02c28eec513a894a3757fccd568a5"
+  integrity sha512-LsEkUAno4PiQ1cmwxFnYWy5xQicpzjXyYeRJEGLjAnAXin8hq0JPkEouZx8vTlmSf1Rde4RSaTu3+3H1qj5ccw==
   dependencies:
     "@helia/delegated-routing-v1-http-api-client" "^3.0.0"
-    "@helia/interface" "^4.3.0"
+    "@helia/interface" "^4.3.1"
     "@libp2p/interface" "^1.1.4"
     "@multiformats/uri-to-multiaddr" "^8.0.0"
     ipns "^9.0.0"
@@ -210,12 +210,12 @@
     sparse-array "^1.3.2"
     uint8arrays "^5.0.2"
 
-"@helia/utils@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@helia/utils/-/utils-0.3.2.tgz#3b69e105c969b4815bcde0e067eaf0fb9d753487"
-  integrity sha512-ge5b5KrzuukYmkgjfpa4duaYRU1AdVg/pXute+pOVaD3V5UTzXeXceCGfrI1m0GAXQ/Arz1F0pNNz4pclTBWVg==
+"@helia/utils@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@helia/utils/-/utils-0.3.3.tgz#0e6522ba14f4db905d038ac4c3743a5bc5236560"
+  integrity sha512-iCS8dJRULgltfx7aLLoqfjWUpqBWrTyouCToB9RgHpNs4lHcIsZn/VSbHyjC4NUF9nIWsxhH/3UAdvWl23HEgw==
   dependencies:
-    "@helia/interface" "^4.3.0"
+    "@helia/interface" "^4.3.1"
     "@ipld/dag-cbor" "^9.2.0"
     "@ipld/dag-json" "^10.2.0"
     "@ipld/dag-pb" "^4.1.0"
@@ -1476,18 +1476,18 @@ hashlru@^2.3.0:
   resolved "https://registry.yarnpkg.com/hashlru/-/hashlru-2.3.0.tgz#5dc15928b3f6961a2056416bb3a4910216fdfb51"
   integrity sha512-0cMsjjIC8I+D3M44pOQdsy0OHXGLVz6Z0beRuufhKa0KfaD2wGwAev6jILzXsd3/vpnNQJmWyZtIILqM1N+n5A==
 
-helia@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/helia/-/helia-4.2.3.tgz#3ed3cd0209d17f7498c7fad7b5d351b5ead7b430"
-  integrity sha512-QcQkXvIDwSi1WdOMsVUB36F3pszuDxjfS6vRQZ/Z1w1R7+h24IMEoYsVbxlrjN4tLaJrjRQT1jRMDytXJ4YYaQ==
+helia@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/helia/-/helia-4.2.5.tgz#9f8025d182bd4f4502e55fac0a74c99547dbdd85"
+  integrity sha512-0X4Kb1jIwGGROcIcfS5xSjQHH8uisBbMGvktnWjziGkmlcgb8JXzilLXTtH+jDpkTkpo0s1VTKZkHo9rozjWkw==
   dependencies:
     "@chainsafe/libp2p-noise" "^15.0.0"
     "@chainsafe/libp2p-yamux" "^6.0.2"
-    "@helia/block-brokers" "^3.0.2"
+    "@helia/block-brokers" "^3.0.3"
     "@helia/delegated-routing-v1-http-api-client" "^3.0.0"
-    "@helia/interface" "^4.3.0"
-    "@helia/routers" "^1.1.0"
-    "@helia/utils" "^0.3.2"
+    "@helia/interface" "^4.3.1"
+    "@helia/routers" "^1.1.1"
+    "@helia/utils" "^0.3.3"
     "@libp2p/autonat" "^1.0.13"
     "@libp2p/bootstrap" "^10.0.16"
     "@libp2p/circuit-relay-v2" "^1.0.16"
