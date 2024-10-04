@@ -27,7 +27,7 @@
     "cids": "^1.1.9",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "express-rate-limit": "^7.3.1",
+    "express-rate-limit": "^7.4.1",
     "helia": "^4.2.3"
   },
   "devDependencies": {
